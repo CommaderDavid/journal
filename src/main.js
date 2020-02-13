@@ -7,5 +7,5 @@ $(document).ready(function() {
     var title = $("input#new-title").val();
     var entry = $("input#new-entry").val();
     
-  })
+  });
 });
