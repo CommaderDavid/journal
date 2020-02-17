@@ -1,5 +1,6 @@
-function journalEntry(entry) {
+export function journalEntry(entry) {
   var paragraph = entry.split(" ");
-  this.wordCount = 0;
-  
+  console.log(paragraph);
+  this.wordCount = [];
+  this.wordCount.push(paragraph);
 }

@@ -6,6 +6,8 @@ $(document).ready(function() {
     e.preventDefault();
     var title = $("input#new-title").val();
     var entry = $("input#new-entry").val();
-    
+    console.log(entry);
+
+    journalEntry(entry);
   });
 });
