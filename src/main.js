@@ -4,10 +4,9 @@ import { journalEntry } from './journal.js';
 $(document).ready(function() {
   $("#new-entry-form").submit(function(e) {
     e.preventDefault();
-    var title = $("input#new-title").val();
-    var entry = $("input#new-entry").val();
-    console.log(entry);
+    // var title = $("input#new-title").val();
+    var entry = new journalEntry($("input#new-entry").val());
 
-    journalEntry(entry);
+    $("#journal-entries").append(entry.paragraph.length);
   });
 });
