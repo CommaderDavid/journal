@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     var totalWord = new JournalEntry(entry);
     totalWord.countVowel();
-
+    
     $("#journal-entries").prepend("<li>" + title + "<br> Total Word count: " + totalWord.paragraph.length + "<br>" + entry + "<br> Vowel count: " + totalWord.currentVowel + "<br> Consonants count: " + totalWord.currentConson + "</li>");
   });
 });

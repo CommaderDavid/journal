@@ -7,18 +7,18 @@ export function JournalEntry(entry) {
 }
 
 JournalEntry.prototype.countVowel = function() {
-  for (var i = 0; i < this.letters.length; i++) {
-    var allLetters = this.letters;
-    var totalVowel = this.currentVowel;
-    var totalConson = this.currentConson;
+  var allLetters = this.letters;
+  var totalVowel = this.currentVowel;
+  var totalConson = this.currentConson;
 
+  for (var i = 0; i < allLetters.length; i++) {
+    // Create if statment that goes through each vowel and adds one to totalVowel
     //  inside this forEach loop the definition of `this` changes
     this.vowels.forEach(function(vowel) {
       if (allLetters[i] === vowel) {
         totalVowel += 1;
       } else {
         totalConson += 1;
-        console.log("consonant total number " + totalConson);
       }
     });
     //  `this` goes back to normal
