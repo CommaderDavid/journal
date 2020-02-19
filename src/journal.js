@@ -31,3 +31,10 @@ JournalEntry.prototype.countVowel = function() {
     this.currentConson = totalConson;
   }
 };
+
+JournalEntry.prototype.getTeaser = function() {
+  var fullEntry = this.paragraph;
+  if (fullEntry.length >= 8) {
+
+  }
+}
