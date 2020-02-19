@@ -34,7 +34,10 @@ JournalEntry.prototype.countVowel = function() {
 
 JournalEntry.prototype.getTeaser = function() {
   var fullEntry = this.paragraph;
-  if (fullEntry.length >= 8) {
+  var teaser = [];
 
+  for (var i = 0; i < 8; i++) {
+    teaser.push(fullEntry[i]);
   }
-}
+  return teaser;
+};
